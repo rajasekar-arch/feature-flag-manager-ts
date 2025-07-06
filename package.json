@@ -1,0 +1,51 @@
+{
+  "name": "feature-flag-manager-ts",
+  "version": "1.0.0",
+  "description": "A TypeScript npm package to manage client-side feature flags, supporting various storage mechanisms and update strategies.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build",
+    "test": "jest --coverage --json --outputFile=test-results/jest-results.json",
+    "test:watch": "jest --watch",
+    "test:ci": "jest --ci --reporters=default --reporters=jest-junit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rajasekar-arch/feature-flag-manager-ts.git"
+  },
+  "keywords": [
+    "feature-flag",
+    "feature-flag-manager-ts",
+    "feature-flag-typescript",
+    "flag",
+    "feature-flags",
+    "typescript",
+    "client-side",
+    "frontend",
+    "manager",
+    "toggle",
+    "configuration",
+    "client-flags",
+    "web-feature-flags",
+    "ff-ts"
+  ],
+  "author": "RAJASEKAR E C <rajasekar_e_c@outlook.com>",
+  "license": "MIT",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/rajasekar-arch/feature-flag-manager-ts/issues"
+  },
+  "homepage": "https://github.com/rajasekar-arch/feature-flag-manager-ts#readme",
+  "devDependencies": {
+    "@types/jest": "^30.0.0",
+    "jest": "^30.0.4",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "jest-html-reporters": "^3.1.7",
+    "jest-junit": "^16.0.0",
+    "ts-jest": "^29.4.0"
+  }
+}
